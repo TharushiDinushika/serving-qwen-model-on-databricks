@@ -34,9 +34,11 @@ Expected response shape:
 Follow the [official documentation](https://docs.databricks.com/aws/en/repos/git-operations-with-repos) to clone a Git repo into Databricks.
 
 ### 2. Run `model_serving.ipynb` to create and register the model.
+Replace model_download_dir and MLflow experiment path with your own workspace paths.
 
 ### 3. Serve the registered model
 Find the registered model under Catalog Explorer → `workspace.default`, then create a serving endpoint by giving it a suitable name and selecting an appropriate compute size.
-![screenshot](images/screenshot.png)
+![screenshot](images/Screenshot.png)
 
 ### 4. Run `inferencing.ipynb` to query the model.
+Replace the url with your served model url.
